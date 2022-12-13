@@ -42,6 +42,7 @@
 
 }
 
+
 .header_nav{
     display: flex;
     justify-content: space-evenly;
@@ -63,4 +64,15 @@
 
 .header_basketCount{
     margin: 0 10px;
+}
+
+
+/* HOME CSS */
+
+.home_image{
+width: 100%;
+z-index: -1;
+margin-bottom: -400px;
+mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0) );
+
 }
