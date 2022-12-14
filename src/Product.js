@@ -1,18 +1,18 @@
 import React from 'react'
-import amazonBaby from './assets/images/amazon_baby.jpg'
+
 import './Product.css'
 
-function Product() {
+function Product({ title, image, price, rating }) {
   return (
 
     <div className='product'>
 
     <div className='product_info'>
-        <p>Toys</p> 
+        <p>{title}</p> 
     
     <p className='product_price'>
         <small>$</small>
-        <strong>19.99</strong>
+        <strong>{price}</strong>
     </p>
 
 {/* ctr + cmd + space */}
@@ -25,7 +25,7 @@ function Product() {
 
     </div>
 
-    <img src={amazonBaby} alt=""/>
+    <img src={image} alt=""/>
 
     <button type="">Add to Basket</button>
 
