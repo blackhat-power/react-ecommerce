@@ -18,7 +18,16 @@ function Product({ title, image, price, rating }) {
 {/* ctr + cmd + space */}
 
     <div className='product_rating'>
-        <p> ⭐️ </p>
+      {
+
+        Array(rating)
+        .fill()
+        .map((v,i)=>(
+          <p> ⭐️ </p>
+        ))
+
+      }
+       
         {/* <p> ⭐️ </p> */}
         {/* <p> ⭐️ </p> */}
     </div>
